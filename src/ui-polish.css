@@ -1,0 +1,151 @@
+.btn,
+.card,
+.nav a,
+.brand .mark {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.demo-banner {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 5px 16px;
+  background: #fff3d9;
+  color: #755416;
+  text-align: center;
+  font-size: 10px;
+}
+
+.demo-banner span {
+  color: #9a6810;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.btn:hover {
+  box-shadow: 0 7px 18px #2f5bea24;
+}
+
+.card {
+  box-shadow: 0 7px 24px #17203308;
+}
+
+.stat {
+  border-color: #e5e7ec;
+}
+
+.stat > span {
+  gap: 12px;
+}
+
+.stat > span svg {
+  padding: 7px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #edf0ff;
+}
+
+.admin-overview .pagehead {
+  margin-bottom: 28px;
+}
+
+.admin-overview .statsgrid {
+  margin-bottom: 20px;
+}
+
+.admin-overview-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 18px;
+  background: linear-gradient(125deg, #fff 35%, #f1f3ff);
+}
+
+.admin-overview-note h2 {
+  margin: 10px 0 6px;
+  font-size: clamp(19px, 2.4vw, 27px);
+  letter-spacing: -.04em;
+}
+
+.admin-overview-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.login-demo-actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.login-demo-actions .field {
+  margin: 0;
+}
+
+.login-demo-actions .btn {
+  width: 100%;
+  min-height: 44px;
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #8b9099;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.login-divider::before,
+.login-divider::after {
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+  content: "";
+}
+
+@media (hover: hover) {
+  .card:not(.stat):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px #17203310;
+  }
+
+  .brand:hover .mark {
+    transform: rotate(-5deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-overview-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .userbox details {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}

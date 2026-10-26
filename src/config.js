@@ -1,0 +1,1 @@
+export const config={name:"EUROXPRO'27",tagline:'Where Europe meets the Mediterranean',dates:'31 March – 4 April 2027',venue:'[Venue name, Antalya]',city:'Antalya, Türkiye',email:'conference@euroxpro27.org'};
