@@ -33,12 +33,10 @@ export function Home() {
       <section className="hero">
         <div>
           <Eyebrow>AIESEC IN EUROPE · REGIONAL CONFERENCE</Eyebrow>
-          <h1>
-            Where Europe meets the <em>Mediterranean.</em>
-          </h1>
+          <h1>Five days in Antalya. One region moving forward.</h1>
           <p>
-            Five days to align our ambition, accelerate exchange impact, and
-            shape the next chapter of youth leadership — together in Antalya.
+            A gathering for AIESEC members to share what works, tackle common
+            challenges and plan what comes next.
           </p>
           <div className="metas">
             <span>
@@ -62,21 +60,19 @@ export function Home() {
             <b>{s.lcs.length} Local Committees</b>
             <span>
               {" "}
-              · {new Set(s.lcs.map((l) => l.mc)).size} Member Committees ·{" "}
+              across {new Set(s.lcs.map((l) => l.mc)).size} Member Committees
+              {" · "}
               {days} days to go
             </span>
           </div>
         </div>
         <div className="hero-art">
-          <div className="art-label">
-            ANTALYA, TÜRKİYE <span>✳</span>
-          </div>
           <Art />
           <div className="art-bottom">
             <span>
-              <Waves size={15} /> Mediterranean spirit
+              <Waves size={15} /> Antalya coast
             </span>
-            <span>36°53′N 30°42′E</span>
+            <span>Türkiye</span>
           </div>
         </div>
       </section>
@@ -85,7 +81,7 @@ export function Home() {
           <div>
             <Eyebrow>REGIONAL PERFORMANCE</Eyebrow>
             <h2>
-              Progress we build <em>together.</em>
+              Approvals across Europe.
             </h2>
             <p>One shared view of exchange impact across our region.</p>
           </div>
@@ -128,7 +124,7 @@ export function Home() {
           <div>
             <Eyebrow>THE GATHERING</Eyebrow>
             <h2>
-              Five days with <em>purpose.</em>
+              Five days with purpose.
             </h2>
             <p>
               Strategy, learning, connection and the energy of the
@@ -181,10 +177,8 @@ export function Home() {
       </section>
       <section className="section feature">
         <div>
-          <Eyebrow>MAKE IT YOURS</Eyebrow>
-          <h2>
-            Make every moment <em>count.</em>
-          </h2>
+          <Eyebrow>Make it yours</Eyebrow>
+          <h2>Make the conference your own.</h2>
           <p>
             Build your agenda, keep your ticket close, and discover more across
             the conference.
@@ -206,10 +200,8 @@ export function Home() {
       </section>
       <section className="section news">
         <div>
-          <Eyebrow>FROM THE CONFERENCE TEAM</Eyebrow>
-          <h2>
-            Good things are <em>taking shape.</em>
-          </h2>
+          <Eyebrow>Notes from the team</Eyebrow>
+          <h2>Conference updates.</h2>
           <p>
             Stay close to the details as we prepare to bring the region
             together.
@@ -234,7 +226,7 @@ export function Home() {
         <div>
           <Eyebrow>ANTALYA IS CALLING</Eyebrow>
           <h2>
-            Ready to make it <em>count?</em>
+            Ready to join us?
           </h2>
           <p>Come with a plan. Leave with momentum.</p>
         </div>
